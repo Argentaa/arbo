@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Arbo Automações</title>
+  <meta name="description" content="Arbo Automações oferece serviços de automação com inteligência artificial para otimizar processos e aumentar a produtividade do seu negócio.">
+  <meta name="keywords" content="automação, inteligência artificial, IA, processos, produtividade, tecnologia, inovação, Arbo">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Estilos personalizados para a seção de processo */
+    .timeline {
+      position: relative;
+    }
+
+    /* Números removidos */
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    /* Barra vertical removida */
+
+    .timeline-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Estilos responsivos gerais */
+    @media (max-width: 991px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .card-header h3, .card-header h5 {
+        font-size: 18px;
+      }
+
+      .display-4 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* Padding removido */
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      .section-title h2 {
+        font-size: 24px;
+      }
+
+      .card {
+        margin-bottom: 20px;
+      }
+
+      .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+      }
+
+      .display-4 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Classe para texto pequeno em dispositivos móveis */
+    .small-text {
+      font-size: 14px;
+    }
+
+    @media (max-width: 576px) {
+      /* Números e padding removidos */
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .hero .btn-get-started {
+        font-size: 18px;
+        padding: 14px 36px;
+        margin-top: 10px;
+      }
+
+      .section-title h2 {
+        font-size: 22px;
+      }
+
+      .card-header h3, .card-header h5 {
+        font-size: 16px;
+      }
+
+      .btn-lg {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .display-4 {
+        font-size: 1.8rem;
+      }
+
+      .small-text {
+        font-size: 13px;
+      }
+
+      .list-group-item {
+        padding: 0.5rem 0.75rem;
+      }
+
+      /* Garantir que os ícones fiquem alinhados com o texto em dispositivos móveis */
+      .list-group-item i {
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Arbo Automações</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#comparison">Comparativo</a></li>
+          <li><a href="#roi">Resultados</a></li>
+          <li><a href="#solutions">Casos Reais</a></li>
+          <li><a href="#process">Processo</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container d-flex flex-column align-items-center text-center">
+        <h2 class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">Transforme seu Negócio com Automação Inteligente</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Soluções de automação com inteligência artificial para otimizar processos e aumentar a produtividade</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#about" class="btn-get-started">Conheça Nossas Soluções</a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3>Sobre a Arbo Automações</h3>
+          <img src="assets/img/about1.jpg" class="img-fluid rounded-4 mb-4" alt="Sobre Arbo Automações">
+          <p>A Arbo Automações é uma empresa especializada em soluções de automação com inteligência artificial, focada em otimizar processos e aumentar a produtividade de empresas de todos os portes. Atuamos com inovação, tecnologia de ponta e um profundo conhecimento das necessidades do mercado moderno.</p>
+          <p>Nossa missão é transformar a maneira como as empresas operam, implementando tecnologias avançadas de IA que simplificam tarefas complexas e liberam o potencial humano para atividades estratégicas. Acreditamos que a automação inteligente não apenas reduz custos e erros operacionais, mas também promove um ambiente corporativo mais eficiente, ágil e orientado para resultados.</p>
+          <p>Oferecemos um portfólio completo de soluções personalizadas, desde a automação de fluxos administrativos e industriais até sistemas inteligentes de tomada de decisão. Nosso time multidisciplinar trabalha lado a lado com cada cliente para entender seus desafios específicos e desenvolver ferramentas sob medida que impulsionam a inovação e a competitividade.</p>
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                "Transformamos processos manuais em fluxos inteligentes, impulsionando a eficiência e inovação do seu negócio."
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Automação de processos com tecnologia de ponta.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Soluções personalizadas com foco em resultados.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Parceria completa: da análise à implementação e suporte.</span></li>
+              </ul>
+              <p>
+                Na Arbo Automações, combinamos expertise técnica com visão estratégica para criar soluções que realmente fazem a diferença. Nosso objetivo é ser parceiro na transformação digital do seu negócio, oferecendo automações inteligentes que geram valor real e vantagem competitiva.
+              </p>
+              <div class="position-relative mt-4">
+                <img src="assets/img/logoo.png" class="img-fluid rounded-4" alt="Equipe Arbo Automações">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <p>Nossas Soluções de Automação<br></p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/1.webp" class="img-fluid" alt="Automação de Processos">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+
+                <h3>Automação de Processos</h3>
+                </a>
+                <p>Transformamos processos manuais e repetitivos em fluxos automatizados, reduzindo erros e aumentando a eficiência operacional. Nossas soluções se adaptam perfeitamente ao seu negócio, otimizando recursos e tempo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/2.jpg" class="img-fluid" alt="Inteligência Artificial">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-cpu"></i>
+                </div>
+
+                <h3>Inteligência Artificial</h3>
+                </a>
+                <p>Implementamos soluções de IA que aprendem com seus dados e processos, tomando decisões inteligentes e automatizadas. Utilizamos algoritmos avançados para análise preditiva, reconhecimento de padrões e otimização de operações.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/3.webp" class="img-fluid" alt="Chatbots e Assistentes Virtuais">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h3>Chatbots e Assistentes Virtuais</h3>
+                </a>
+                <p>Desenvolvemos assistentes virtuais inteligentes que automatizam o atendimento ao cliente e processos internos. Nossos chatbots utilizam linguagem natural para interações fluidas e eficientes com usuários.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="comparison" class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Comparativo</h2>
+        <p>IA vs Secretária Humana</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 gx-3 gx-md-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-header bg-success text-white text-center py-2 py-md-3">
+                <h3 class="mb-0 fs-5 fs-md-4" style="color: #fff;">Assistente Virtual com IA</h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Disponibilidade 24/7</strong> - Trabalha sem interrupções, fins de semana ou feriados
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Custo Reduzido</strong> - Sem salários, benefícios, férias ou encargos trabalhistas
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Escalabilidade</strong> - Atende múltiplas solicitações simultaneamente
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Consistência</strong> - Mantém o mesmo nível de qualidade em todas as interações
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Sem Erros Humanos</strong> - Executa tarefas com precisão e sem fadiga
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Aprendizado Contínuo</strong> - Melhora constantemente com base em dados e interações
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <div>
+                      <strong>Multilíngue</strong> - Comunica-se em diversos idiomas sem custo adicional
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-header bg-secondary text-white text-center py-2 py-md-3">
+                <h3 class="mb-0 fs-5 fs-md-4" style="color: #fff;">Secretária Humana</h3>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-person-fill text-primary me-2"></i>
+                    <div>
+                      <strong>Toque Humano</strong> - Empatia e conexão pessoal nas interações
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-person-fill text-primary me-2"></i>
+                    <div>
+                      <strong>Criatividade</strong> - Capacidade de improvisar e resolver problemas complexos
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-person-fill text-primary me-2"></i>
+                    <div>
+                      <strong>Julgamento</strong> - Tomada de decisões em situações ambíguas
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-person-fill text-primary me-2"></i>
+                    <div>
+                      <strong>Representação Física</strong> - Presença em reuniões e eventos presenciais
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+                    <div>
+                      <strong>Horário Limitado</strong> - Trabalha apenas em horário comercial
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+                    <div>
+                      <strong>Custo Elevado</strong> - Salário, benefícios e encargos trabalhistas
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+                    <div>
+                      <strong>Capacidade Limitada</strong> - Atende uma solicitação por vez
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 mt-md-5">
+          <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="p-3 p-md-4 bg-white rounded-4 shadow">
+              <h4 class="fs-5 fs-md-4">A Solução Ideal: Combinação Estratégica</h4>
+              <p class="mb-0 small-text">
+                Para muitas empresas, a combinação estratégica de assistentes virtuais com IA para tarefas rotineiras e repetitivas,
+                complementada por intervenção humana em situações que exigem empatia e julgamento complexo,
+                representa o equilíbrio perfeito entre eficiência, custo e qualidade de atendimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="solutions" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Soluções</h2>
+        <p>Casos Reais de Automação com IA no Brasil</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Automação de Processos Robóticos (RPA)</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Pluxee (antiga Sodexo)</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Retorno do investimento em menos de 45 dias</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Economia anual de R$ 70 mil com investimento de R$ 60 mil</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Automação da busca e discagem de contatos para equipe de vendas</li>
+                </ul>
+                <p>O RPA permitiu que os operadores focassem em atividades de maior valor, enquanto as tarefas repetitivas são executadas automaticamente.</p>
+              </div>
+
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Automação de Processos Robóticos (RPA)</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Sanofi e Sicoob</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Sanofi:</strong> Ganho de eficiência de 35% em 19 processos</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Sanofi:</strong> Automação da logística reversa de medicamentos</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Sicoob:</strong> Redução de até 80% no tempo de processos financeiros</li>
+                </ul>
+                <p>A automação robótica está transformando diversas áreas de negócio, com resultados mensuráveis em eficiência e redução de custos.</p>
+              </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Análise Preditiva</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Portobello Shop</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Redução de R$ 20 milhões em estoques</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Eficiência de 28,5% e assertividade de 77% nas previsões</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Redução de mais de 50% no tempo para gerar previsões</li>
+                </ul>
+                <p>O sistema de análise preditiva permitiu uma gestão de estoques muito mais eficiente, com impacto direto no capital de giro e na rentabilidade.</p>
+              </div>
+
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Análise Preditiva</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Supermercados Bahamas e Americanas</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Bahamas:</strong> Antecipação de problemas que impactam vendas</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Bahamas:</strong> Relatórios automatizados de desempenho</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Americanas:</strong> Gerenciamento de inventário e personalização</li>
+                </ul>
+                <p>A análise preditiva está transformando o varejo brasileiro, permitindo melhorar a experiência do cliente.</p>
+              </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Chatbots Inteligentes</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Banco Bradesco - BIA</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Resolutividade superior a 80% das consultas</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Redução do tempo de resposta de dias para horas</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Satisfação do cliente acima de 85%</li>
+                </ul>
+                <p>A BIA processa milhões de interações mensais, oferecendo suporte para consultas, transações e informações bancárias, transformando a experiência do cliente.</p>
+              </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+              <div class="details p-4 pt-5 mt-4">
+                <div class="icon" style="top: -36px; left: calc(50% - 36px);">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h3 class="fs-4 mb-3">Chatbots Inteligentes</h3>
+                <h4 class="mb-3 fs-6 text-primary">Caso Real: Setor Bancário Brasileiro</h4>
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>618 milhões de atendimentos automatizados em 2020</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Redução significativa de custos operacionais</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Atendimento 24/7 para consultas e transações</li>
+                </ul>
+                <p>Os chatbots inteligentes estão revolucionando o atendimento no setor financeiro brasileiro, permitindo que os bancos ofereçam serviços mais ágeis e personalizados.</p>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="about section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nosso Processo</h2>
+        <p>Como Implementamos Automação com IA em Seu Negócio</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline">
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-content bg-white p-4 rounded-4 shadow">
+                  <h4 class="text-primary">Diagnóstico Gratuito</h4>
+                  <p>Realizamos uma análise completa dos seus processos atuais, identificando gargalos, ineficiências e oportunidades de automação. Você recebe um relatório detalhado com estimativas de economia.</p>
+                  <div class="d-flex flex-wrap align-items-center mt-3">
+                    <div class="badge bg-primary me-2 mb-2">Gratuito</div>
+                    <div class="badge bg-success me-2 mb-2">Sem compromisso</div>
+                    <div class="badge bg-info mb-2">Uma semana</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-content bg-white p-4 rounded-4 shadow">
+                  <h4 class="text-primary">Planejamento Estratégico</h4>
+                  <p>Desenvolvemos um plano de implementação personalizado, definindo claramente os objetivos, métricas de sucesso, cronograma e recursos necessários. Priorizamos as automações com maior impacto e menor tempo de implementação.</p>
+                  <div class="d-flex flex-wrap align-items-center mt-3">
+                    <div class="badge bg-primary me-2 mb-2">Personalizado</div>
+                    <div class="badge bg-success me-2 mb-2">Priorização inteligente</div>
+                    <div class="badge bg-info mb-2">1-2 semanas</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3 -->
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-content bg-white p-4 rounded-4 shadow">
+                  <h4 class="text-primary">Desenvolvimento e Implementação</h4>
+                  <p>Nossa equipe de especialistas desenvolve e implementa as soluções de automação, integrando-as perfeitamente aos seus sistemas existentes. Utilizamos metodologias ágeis para entregas rápidas e ajustes contínuos.</p>
+                  <div class="d-flex flex-wrap align-items-center mt-3">
+                    <div class="badge bg-primary me-2 mb-2">Equipe especializada</div>
+                    <div class="badge bg-success me-2 mb-2">Metodologia ágil</div>
+                    <div class="badge bg-info mb-2">2-3 semanas</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 4 -->
+              <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-content bg-white p-4 rounded-4 shadow">
+                  <h4 class="text-primary">Monitoramento e Otimização Contínua</h4>
+                  <p>Acompanhamos de perto o desempenho das automações implementadas, coletando dados e métricas para identificar oportunidades de melhoria. Realizamos ajustes e otimizações contínuas para maximizar sua experiencia com nosso serviço.</p>
+                  <div class="d-flex flex-wrap align-items-center mt-3">
+                    <div class="badge bg-primary me-2 mb-2">Análise de dados</div>
+                    <div class="badge bg-success me-2 mb-2">Melhoria contínua</div>
+                    <div class="badge bg-info mb-2">Contínuo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
+            <div class="text-center mt-5 pt-4" data-aos="fade-up" data-aos-delay="600">
+              <h3>Pronto para Começar Sua Jornada de Transformação?</h3>
+              <p class="lead mb-4">Nosso processo comprovado já ajudou dezenas de empresas a alcançarem resultados extraordinários com automação inteligente.</p>
+              <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">Agende Seu Diagnóstico Gratuito</a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Entre em Contato Conosco</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Endereço</h3>
+                  <p>Seberi - RS</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Telefone</h3>
+                  <p>+55 9 9688-8117</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>contato@arboautomacoes.com.br</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="whatsapp-contact" data-aos="fade-up" data-aos-delay="200">
+              <div class="text-center p-4 bg-white shadow" style="min-height: 370px; display: flex; flex-direction: column; justify-content: center;">
+                <i class="bi bi-whatsapp text-success" style="font-size: 3rem;"></i>
+                <h3 class="mt-3">Envie uma mensagem para nosso WhatsApp</h3>
+                <p class="mb-4">Estamos prontos para atender você e responder todas as suas dúvidas sobre automação com inteligência artificial.</p>
+                <a href="https://wa.me/5599688811?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20automação"
+                   class="btn btn-success btn-lg px-4 py-2" target="_blank">
+                  <i class="bi bi-whatsapp me-2"></i>Iniciar Conversa
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4 align-items-center justify-content-center text-center">
+        <div class="col-lg-4 col-md-6 footer-about d-flex flex-column align-items-center justify-content-center text-center">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Arbo Automações</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Seberi, RS</p>
+            <p class="mt-3"><strong>Telefone:</strong> <span>+55 9 9688-8117</span></p>
+            <p><strong>Email:</strong> <span>contato@arboautomacoes.com.br</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2025 <strong>Arbo Automações</strong>. Todos os direitos reservados.</p>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
