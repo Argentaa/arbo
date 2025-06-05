@@ -19,131 +19,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-    /* Estilos personalizados para a seção de processo */
-    .timeline {
-      position: relative;
-    }
-
-    /* Números removidos */
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 30px;
-    }
-
-    /* Barra vertical removida */
-
-    .timeline-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Estilos responsivos gerais */
-    @media (max-width: 991px) {
-      .hero h2 {
-        font-size: 28px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .section-title h2 {
-        font-size: 28px;
-      }
-
-      .card-header h3, .card-header h5 {
-        font-size: 18px;
-      }
-
-      .display-4 {
-        font-size: 2.5rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      /* Padding removido */
-
-      .hero h2 {
-        font-size: 24px;
-      }
-
-      .section-title h2 {
-        font-size: 24px;
-      }
-
-      .card {
-        margin-bottom: 20px;
-      }
-
-      .btn-lg {
-        padding: 0.5rem 1.5rem;
-        font-size: 1rem;
-      }
-
-      .display-4 {
-        font-size: 2rem;
-      }
-    }
-
-    /* Classe para texto pequeno em dispositivos móveis */
-    .small-text {
-      font-size: 14px;
-    }
-
-    @media (max-width: 576px) {
-      /* Números e padding removidos */
-
-      .hero h2 {
-        font-size: 26px;
-      }
-
-      .hero p {
-        font-size: 18px;
-      }
-
-      .hero .btn-get-started {
-        font-size: 18px;
-        padding: 14px 36px;
-        margin-top: 10px;
-      }
-
-      .section-title h2 {
-        font-size: 22px;
-      }
-
-      .card-header h3, .card-header h5 {
-        font-size: 16px;
-      }
-
-      .btn-lg {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
-      }
-
-      .display-4 {
-        font-size: 1.8rem;
-      }
-
-      .small-text {
-        font-size: 13px;
-      }
-
-      .list-group-item {
-        padding: 0.5rem 0.75rem;
-      }
-
-      /* Garantir que os ícones fiquem alinhados com o texto em dispositivos móveis */
-      .list-group-item i {
-        min-width: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  </style>
+  <link href="assets/css/inline-styles.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -157,12 +33,13 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#about">Sobre</a></li>
+          <li><a href="#chat">Chat</a></li>
           <li><a href="#services">Serviços</a></li>
           <li><a href="#comparison">Comparativo</a></li>
           <li><a href="#solutions">Resultados</a></li>
           <li><a href="#process">Processo</a></li>
           <li><a href="#contact">Contato</a></li>
+          <li><a href="#about">Sobre</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -174,57 +51,47 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
+      <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1856" height="661"></canvas>
       <div class="container d-flex flex-column align-items-center text-center">
         <h2 class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">Transforme seu Negócio com Automação Inteligente</h2>
         <p data-aos="fade-up" data-aos-delay="200">Soluções de automação com inteligência artificial para otimizar processos e aumentar a produtividade</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Conheça Nossas Soluções</a>
+          <a href="#chat" class="btn-get-started">Conheça Nossas Soluções</a>
         </div>
       </div>
+    </section>
+    <!-- /Hero Section -->
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3>Sobre a Arbo Automações</h3>
-
-          <p>A Arbo Automações é uma empresa especializada em soluções de automação com inteligência artificial, focada em otimizar processos e aumentar a produtividade de empresas de todos os portes. Atuamos com inovação, tecnologia de ponta e um profundo conhecimento das necessidades do mercado moderno.</p>
-          <p>Nossa missão é transformar a maneira como as empresas operam, implementando tecnologias avançadas de IA que simplificam tarefas complexas e liberam o potencial humano para atividades estratégicas. Acreditamos que a automação inteligente não apenas reduz custos e erros operacionais, mas também promove um ambiente corporativo mais eficiente, ágil e orientado para resultados.</p>
-          <p>Oferecemos um portfólio completo de soluções personalizadas, desde a automação de fluxos administrativos e industriais até sistemas inteligentes de tomada de decisão. Nosso time multidisciplinar trabalha lado a lado com cada cliente para entender seus desafios específicos e desenvolver ferramentas sob medida que impulsionam a inovação e a competitividade.</p>
-
-          <div class="content ps-0">
-            <p class="fst-italic">
-              "Transformamos processos manuais em fluxos inteligentes, impulsionando a eficiência e inovação do seu negócio."
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Automação de processos com tecnologia de ponta.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Soluções personalizadas com foco em resultados.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Parceria completa: da análise à implementação e suporte.</span></li>
-            </ul>
-            <p>
-              Na Arbo Automações, combinamos expertise técnica com visão estratégica para criar soluções que realmente fazem a diferença. Nosso objetivo é ser parceiro na transformação digital do seu negócio, oferecendo automações inteligentes que geram valor real e vantagem competitiva.
-            </p>
-          </div>
-
-          </div>
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5 w-100">
-              <div class="position-relative">
-                <img src="assets/img/logoo.png" class="img-fluid rounded-4" alt="Equipe Arbo Automações">
-              </div>
+    <section id="chat" class="chat section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Chat Automação</h2>
+        <p>Exemplos com nossa automação</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="chat-header d-flex align-items-center justify-content-between p-3 rounded-top-4 shadow-sm">
+          <div class="d-flex align-items-center">
+            <div class="avatar me-3">
+              <i class="bi bi-robot" style="font-size: 2rem; color: #fff;"></i>
+            </div>
+            <div>
+              <h5 class="mb-0 text-white">Assistente Arbo</h5>
+              <small class="text-success">Online</small>
             </div>
           </div>
+          <div class="chat-nav d-flex align-items-center">
+            <button class="chat-button badge bg-primary rounded-pill me-2" data-chat-id="1">1</button>
+            <button class="chat-button badge bg-primary rounded-pill me-2" data-chat-id="2">2</button>
+            <button class="chat-button badge bg-primary rounded-pill me-2" data-chat-id="3">3</button> 
+          </div>
         </div>
-
+        <div class="chat-box p-4 rounded-bottom-4 shadow mb-3">
+          <!-- Mensagens serão adicionadas aqui -->
+        </div>
+        
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
@@ -435,7 +302,6 @@
                 <i class="bi bi-gear-fill"></i>
               </div>
               <h3 class="fs-4 mb-3">Automação de Processos Administrativos</h3>
-              <h4 class="mb-3 fs-6 text-primary">O que esperar:</h4>
               <ul class="list-unstyled mb-3">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Aumento significativo na precisão da análise de documentos</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Redução drástica no tempo de execução de tarefas rotineiras</li>
@@ -451,7 +317,6 @@
                 <i class="bi bi-graph-up"></i>
               </div>
               <h3 class="fs-4 mb-3">Otimização Inteligente de Conteúdo</h3>
-              <h4 class="mb-3 fs-6 text-primary">O que esperar:</h4>
               <ul class="list-unstyled mb-3">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Capacidade de processar e analisar grandes volumes de dados</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Melhora na relevância e no alcance do conteúdo em buscas</li>
@@ -467,7 +332,6 @@
                 <i class="bi bi-chat-dots"></i>
               </div>
               <h3 class="fs-4 mb-3">Chatbots e Atendimento Automatizado</h3>
-              <h4 class="mb-3 fs-6 text-primary">O que esperar:</h4>
               <ul class="list-unstyled mb-3">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Ampla cobertura de interações de atendimento via IA</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Diminuição do tempo médio de espera e resolução</li>
@@ -610,6 +474,47 @@
       </div>
 
     </section>
+    
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up" style="padding-bottom: 20px;">
+        <h2>Sobre</h2>
+        <p>Arbo Automações</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+          <p>A Arbo Automações é uma empresa especializada em soluções de automação com inteligência artificial, focada em otimizar processos e aumentar a produtividade de empresas de todos os portes. Atuamos com inovação, tecnologia de ponta e um profundo conhecimento das necessidades do mercado moderno.</p>
+          <p>Nossa missão é transformar a maneira como as empresas operam, implementando tecnologias avançadas de IA que simplificam tarefas complexas e liberam o potencial humano para atividades estratégicas. Acreditamos que a automação inteligente não apenas reduz custos e erros operacionais, mas também promove um ambiente corporativo mais eficiente, ágil e orientado para resultados.</p>
+          <p>Oferecemos um portfólio completo de soluções personalizadas, desde a automação de fluxos administrativos e industriais até sistemas inteligentes de tomada de decisão. Nosso time multidisciplinar trabalha lado a lado com cada cliente para entender seus desafios específicos e desenvolver ferramentas sob medida que impulsionam a inovação e a competitividade.</p>
+
+          <div class="content ps-0">
+            <p class="fst-italic">
+              "Transformamos processos manuais em fluxos inteligentes, impulsionando a eficiência e inovação do seu negócio."
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Automação de processos com tecnologia de ponta.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Soluções personalizadas com foco em resultados.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i> <span>Parceria completa: da análise à implementação e suporte.</span></li>
+            </ul>
+            <p>
+              Na Arbo Automações, combinamos expertise técnica com visão estratégica para criar soluções que realmente fazem a diferença. Nosso objetivo é ser parceiro na transformação digital do seu negócio, oferecendo automações inteligentes que geram valor real e vantagem competitiva.
+            </p>
+          </div>
+
+          </div>
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5 w-100">
+              <div class="position-relative">
+                <img src="assets/img/logoo.png" class="img-fluid rounded-4" alt="Equipe Arbo Automações">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -648,8 +553,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat-simulation.js"></script>
+  <script src="assets/js/particles-config.js"></script>
 
 </body>
 

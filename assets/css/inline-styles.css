@@ -1,0 +1,181 @@
+/* Particles.js canvas styling */
+#hero {
+  position: relative;
+  overflow: hidden; /* Ensure particles don't overflow */
+}
+
+#hero .particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Place behind content */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2; /* Place content above particles */
+}
+
+/* Estilos personalizados para a seção de processo */
+.timeline {
+  position: relative;
+}
+
+/* Números removidos */
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Barra vertical removida */
+
+.timeline-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos responsivos gerais */
+@media (max-width: 991px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section-title h2 {
+/* Estilos para o botão em dispositivos móveis */
+  @media (max-width: 991px) {
+    .btn-get-started {
+      padding: 10px 15px; /* Ajuste do padding */
+      font-size: 14px; /* Ajuste do tamanho da fonte */
+    }
+  }
+    font-size: 28px;
+  }
+
+  .card-header h3, .card-header h5 {
+    font-size: 18px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Padding removido */
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+/* Classe para texto pequeno em dispositivos móveis */
+.small-text {
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  /* Números e padding removidos */
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero .btn-get-started {
+    padding: 14px 36px;
+    margin-top: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  .card-header h3, .card-header h5 {
+    font-size: 16px;
+  }
+
+  .btn-lg {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  .small-text {
+    font-size: 13px;
+  }
+
+  .list-group-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Garantir que os ícones fiquem alinhados com o texto em dispositivos móveis */
+  .list-group-item i {
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Chat Section Styles */
+.chat-box { height: 400px; overflow-y: auto; }
+.chat-message { margin-bottom: 1rem; }
+.chat-message.user { text-align: right; }
+.chat-message.bot { text-align: left; }
+.chat-message .text { display: inline-block; padding: .3rem .8rem; border-radius: 0.8rem; font-size: 0.9em; max-width: 70%; }
+
+/* Animation for chat messages */
+.chat-message.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.chat-message.user .text { background-color: #007bff; color: #fff; text-align: left;}
+.chat-message.bot .text { background-color: #f1f1f1; color: #333; }
+
+/* Style for chat buttons */
+.chat-button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #0056b3 !important; /* Darker shade on hover */
+}

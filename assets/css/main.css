@@ -994,8 +994,8 @@ section,
   }
 
   .hero .btn-get-started {
-    font-size: 18px;
-    padding: 12px 36px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 
@@ -1839,4 +1839,105 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+/*--------------------------------------------------------------
+# Chat Section
+--------------------------------------------------------------*/
+.chat-header {
+  background-color: #28323a; /* Dark background for header */
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color); /* Purple background for avatar */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.badge .chat-header .chat-nav {
+  background-color: var(--accent-color); /* Purple for badges */
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0.5em 0.7em;
+}
+
+.chat-header .chat-nav i {
+  color: var(--accent-color); /* Purple for play icon */
+}
+
+.chat-box {
+  background-color: #1a202c; /* Dark background for chat area */
+  min-height: 400px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  background-color: #1a202c; /* Dark background for input area */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+}
+
+.chat-input textarea {
+  background-color: #2d3748; /* Darker input field */
+  border: none;
+  color: #ffffff;
+  resize: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.chat-input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.chat-input .btn {
+  background-color: #6a0dad; /* Purple send button */
+  border: none;
+  color: #ffffff;
+}
+
+.chat-input .btn:hover {
+  background-color: #5a0ca0; /* Darker purple on hover */
+}
+
+/* Chat messages */
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.message.received {
+  background-color: #2d3748; /* Dark gray for received messages */
+  color: #ffffff;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.message.sent {
+  background-color: #6a0dad; /* Purple for sent messages */
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+/* Remove border from chat buttons */
+.chat-button {
+    border: none; /* Remove border */
+}
+
+/* Align user messages to the left */
+.chat-message.user {
+    text-align: left; /* Align text to the left for user messages */
 }
