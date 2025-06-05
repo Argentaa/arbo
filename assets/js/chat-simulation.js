@@ -51,36 +51,43 @@
   ];
 
   function displayConversation(chatId) {
-    console.log('Displaying conversation for chat ID:', chatId); // Log the chat ID being displayed
-    // Remove the check to allow switching conversations
+  console.log('Displaying conversation for chat ID:', chatId); // Log the chat ID being displayed
 
-    // Clear any existing timeout and stop current display if active
-    clearTimeout(currentTimeout);
-    isDisplaying = true; // Set flag to true when starting display
+  // Clear any existing timeout and stop current display if active
+  clearTimeout(currentTimeout);
+  isDisplaying = true; // Set flag to true when starting display
 
-    chatBox.innerHTML = ''; // Clear current messages
-    const conversationIndex = chatId - 1; // chat-id 1 corresponds to index 0
-    const conversation = conversations[conversationIndex];
+  chatBox.innerHTML = ''; // Clear current messages
+  const conversationIndex = chatId - 1; // chat-id 1 corresponds to index 0
+  const conversation = conversations[conversationIndex];
 
-    if (conversation) {
-        console.log('Conversation data:', conversation); // Log the conversation data
-      let messageIndex = 0;
-      function showMessage() {
-        if (messageIndex < conversation.length) {
-          const message = conversation[messageIndex];
-          appendMessage(message.text, message.sender);
-          console.log('Appending message:', message.text); // Log the message being appended
-          messageIndex++;
-          currentTimeout = setTimeout(showMessage, 2500); // Store timeout ID to show next message with a delay
-        } else {
-          isDisplaying = false; // Reset flag when conversation finishes
-        }
+  if (conversation) {
+    console.log('Conversation data:', conversation); // Log the conversation data
+    let messageIndex = 0;
+
+    function showMessage() {
+      if (messageIndex < conversation.length) {
+        const message = conversation[messageIndex];
+        appendMessage(message.text, message.sender);
+        console.log('Appending message:', message.text); // Log the message being appended
+        messageIndex++;
+        currentTimeout = setTimeout(showMessage, 2500); // Show next message after delay
+      } else {
+        // Reinicia a conversa após um pequeno atraso
+        setTimeout(() => {
+          chatBox.innerHTML = ''; // Limpa o chat
+          messageIndex = 0; // Reinicia o índice
+          showMessage(); // Começa novamente
+        }, 3000); // Espera 3 segundos antes de repetir
       }
-      showMessage(); // Start displaying messages
-    } else {
-      isDisplaying = false; // Reset flag if conversation is not found
     }
+
+    showMessage(); // Start displaying messages
+  } else {
+    isDisplaying = false; // Reset flag if conversation is not found
   }
+}
+
 
   // Add event listeners to the buttons
   const chatButtons = document.querySelectorAll('.chat-button');
