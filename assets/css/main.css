@@ -772,6 +772,53 @@ h6 {
   opacity: 1;
 }
 
+.whatsapp-btn {
+  position: fixed;
+  visibility: hidden; /* Start hidden, will be made visible with .active class */
+  opacity: 0; /* Start hidden, will be made visible with .active class */
+  right: 65px; /* Position to the left of scroll-top (40px width + 10px gap + 15px original right) */
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #25D366; /* WhatsApp green */
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.whatsapp-btn i {
+  font-size: 24px;
+  color: var(--contrast-color); /* White icon */
+  line-height: 0;
+}
+
+.whatsapp-btn:hover {
+  background-color: color-mix(in srgb, #25D366, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.whatsapp-btn.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Adjust scroll-top position to make space for the new button */
+.scroll-top {
+  right: 15px; /* Keep original position */
+  bottom: 15px;
+  /* Other styles remain the same */
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/

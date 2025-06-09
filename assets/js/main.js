@@ -60,13 +60,17 @@
   }
 
   /**
-   * Scroll top button
+   * Scroll top and WhatsApp buttons
    */
   let scrollTop = document.querySelector('.scroll-top');
+  let whatsappBtn = document.querySelector('.whatsapp-btn');
 
   function toggleScrollTop() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+    if (whatsappBtn) {
+      window.scrollY > 100 ? whatsappBtn.classList.add('active') : whatsappBtn.classList.remove('active');
     }
   }
   scrollTop.addEventListener('click', (e) => {
