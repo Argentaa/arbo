@@ -56,7 +56,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
         function displayConversation(chatId) {
           clearTimeout(currentTimeout);
-          isDisplaying = true;
+          isDisplaying = true; // Set to true when a conversation starts
           chatBox.innerHTML = '';
           const conversation = conversations[chatId - 1];
           if (conversation) {
@@ -68,16 +68,17 @@ const observer = new IntersectionObserver((entries, observer) => {
                 messageIndex++;
                 currentTimeout = setTimeout(showMessage, 2500);
               } else {
+                // Conversation finished, restart it after a delay
                 setTimeout(() => {
                   chatBox.innerHTML = '';
-                  messageIndex = 0;
-                  showMessage();
+                  messageIndex = 0; // Reset index for restart
+                  showMessage(); // Restart the current conversation
                 }, 3000);
               }
             }
             showMessage();
           } else {
-            isDisplaying = false;
+            isDisplaying = false; // No conversation to display
           }
         }
 
@@ -105,4 +106,3 @@ const chatSection = document.querySelector('#chat');
 if (chatSection) {
   observer.observe(chatSection);
 }
-
